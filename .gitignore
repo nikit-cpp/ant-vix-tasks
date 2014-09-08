@@ -1,3 +1,7 @@
 target
 .idea
 ant-vix-tasks.iml
+releases
+.settings
+.classpath
+.project

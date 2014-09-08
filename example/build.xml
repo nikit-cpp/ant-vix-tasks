@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="MyTask" basedir="." default="testVIX">
+
+	<path id="vixapi.classpath" >
+	    <pathelement location="c:\Users\Konev.Nikita\.m2\repository\net\java\dev\jna\jna\3.3.0\jna-3.3.0.jar" />
+		<pathelement location="c:\Users\Konev.Nikita\.m2\repository\net\java\dev\jna\jna\3.3.0\jna-3.3.0-platform.jar" />
+		<pathelement location="c:\Users\Konev.Nikita\.m2\repository\commons-lang\commons-lang\2.3\commons-lang-2.3.jar" />
+		<pathelement location="c:\Users\Konev.Nikita\workspace\ant-vix-tasks\target\ant-vix-tasks-1.2-SNAPSHOT.jar" />
+	</path>
+
+	<taskdef name="vix" classname="zhuravlik.ant.vix.VixTask" classpathref="vixapi.classpath"/>
+	
+	
+	<target name="testVIX">
+		<vix path="C:\Users\Konev.Nikita\vm-instance\CLS_Win7_SP1_x32-Template.vmx" vixPath="c:\Program Files (x86)\VMware\VMware VIX\Workstation-10.0.0-and-vSphere-5.5.0\32bit\vix.dll" serviceprovider="workstation">
+			<!-- <poweron />
+			<waitfortools />
+			<login interactive="true" user="admin" password="admin" /> -->
+		    <!-- <writevariable type="runtime" name="ethernet0.vnet" value="VMnet4"/>
+		    <suspend />
+		    <poweron /> -->
+		    <poweron />
+		</vix>
+	</target>
+
+</project>
