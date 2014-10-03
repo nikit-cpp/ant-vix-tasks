@@ -318,7 +318,7 @@ public class VixTask extends Task {
         actions.add(vixAction);
     }
     
-    public void addGetNamedSnapshot(GetNamedSnapshot vixAction){
+    public void addCheckForExistingSnapshot(CheckForExistingSnapshot vixAction){
         actions.add(vixAction);
     }
 
