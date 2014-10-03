@@ -317,6 +317,10 @@ public class VixTask extends Task {
     public void addWriteVariable(WriteVariable vixAction) {
         actions.add(vixAction);
     }
+    
+    public void addGetNamedSnapshot(GetNamedSnapshot vixAction){
+        actions.add(vixAction);
+    }
 
     /*
      * Implementation of Ant task execute method
