@@ -5,10 +5,12 @@
 	    
 	<target name="testVIX">
 		<vix path="C:\Users\Konev.Nikita\vm-instance\CLS_Win7_SP1_x32-Template.vmx" vixPath="c:\Program Files (x86)\VMware\VMware VIX\Workstation-10.0.0-and-vSphere-5.5.0\64bit\vix.dll" serviceprovider="workstation">
-		    <!-- <poweron /> -->
+		    <poweron />
 			<waitfortools />
 		    <checkforexistingsnapshot name = "Snap 2"/>
-			<!-- <login interactive="true" user="admin" password="admin" /> -->
+		    <!-- <login interactive="false" user="root" password="111111" />
+		    <runscript interpreter="C:\Windows\System32\cmd.exe" text="echo hello, dude! >> C:\Users\root\Desktop\log.txt"/>
+			<login interactive="true" user="admin" password="admin" /> -->
 		    <!-- <writevariable type="runtime" name="ethernet0.vnet" value="VMnet4"/> -->
 		    <!-- <suspend /> -->
 		</vix>
