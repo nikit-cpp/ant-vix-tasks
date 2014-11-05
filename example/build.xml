@@ -8,9 +8,9 @@
 		    <poweron />
 			<waitfortools />
 		    <checkforexistingsnapshot name = "Snap 2"/>
-		    <!-- <login interactive="false" user="root" password="111111" />
-		    <runscript interpreter="C:\Windows\System32\cmd.exe" text="echo hello, dude! >> C:\Users\root\Desktop\log.txt"/>
-			<login interactive="true" user="admin" password="admin" /> -->
+		    <login interactive="false" user="root" password="111111" />
+		    <runscript text="time /t >> C:\Users\root\Desktop\time.txt"/>
+			<!-- <login interactive="true" user="admin" password="admin" /> -->
 		    <!-- <writevariable type="runtime" name="ethernet0.vnet" value="VMnet4"/> -->
 		    <!-- <suspend /> -->
 		</vix>
